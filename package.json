@@ -4,11 +4,15 @@
   "description": "Double Dummy Solver for Bridge",
   "main": "dds.js",
   "dependencies": {
+    "@babel/cli": "^7.23.0",
+    "@babel/core": "^7.23.0",
     "react": "^0.14.2",
     "react-dom": "^0.14.2",
     "underscore": "^1.8.3"
   },
   "devDependencies": {
+    "@babel/preset-flow": "^7.22.15",
+    "@babel/preset-react": "^7.22.15",
     "babel-core": "^5",
     "chai": "^3.4.1",
     "http-server": "^0.8.5",
@@ -17,7 +21,7 @@
   "scripts": {
     "test": "mocha",
     "http-server": "http-server",
-    "watch": "babel --verbose --source-maps true --watch hand-explorer.js ibb-to-pbn.js --out-file all.es5.js"
+    "watch": "npx babel --verbose --source-maps true --watch hand-explorer.js ibb-to-pbn.js --out-file all.es5.js"
   },
   "repository": {
     "type": "git",
